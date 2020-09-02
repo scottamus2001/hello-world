@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/scottamus2001/hello-world/locale"
+)
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println(locale.Hello(locale.ENGLISH), "world")
+	fmt.Println(locale.Hello(locale.ITALIAN), "world")
+	fmt.Println(locale.Hello(locale.SPANISH), "world")
 }
